@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Heroes - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <header>
+        <nav class="top-nav">
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="heroes.html">Heroes</a></li>
+                <li><a href="villains.html">Villains</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1 class="page-title">CONTACT THE JUSTICE LEAGUE</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info-block">
+                    <h2>SECURE CHANNELS</h2>
+                    <p>Потрібно надіслати сигнал лиха чи повідомити про активність металюдей? Скористайтеся нашими захищеними каналами зв'язку.</p>
+                    
+                    <div class="info-item">
+                        <span>LOCATION:</span> Watchtower, Earth Orbit
+                    </div>
+                    <div class="info-item">
+                        <span>FREQUENCY:</span> 148.25 MHz (Encrypted)
+                    </div>
+                    <div class="info-item">
+                        <span>HOTLINE:</span> 1-800-BAT-SIGNAL
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="codename">CODENAME / NAME</label>
+                        <input type="text" id="codename" name="codename" required placeholder="Наприклад: Мешканець Готема">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="threat-level">THREAT LEVEL</label>
+                        <select id="threat-level" name="threat-level">
+                            <option value="low">Low (Локальна проблема)</option>
+                            <option value="medium">Medium (Загроза для міста)</option>
+                            <option value="high">High (Загроза для планети)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">TRANSMISSION MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Опишіть ситуацію докладно..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SEND ENCRYPTED MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
